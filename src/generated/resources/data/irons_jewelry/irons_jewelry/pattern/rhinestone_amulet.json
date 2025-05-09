@@ -16,17 +16,6 @@
         }
       ],
       "drawOrder": 1,
-      "id": "irons_jewelry:gem_rhinestone_primary",
-      "materialCost": 1
-    },
-    {
-      "bonuses": [
-        {
-          "bonusType": "irons_jewelry:attribute_bonus",
-          "qualityMultiplier": 0.5
-        }
-      ],
-      "drawOrder": 2,
       "id": "irons_jewelry:gem_rhinestone_a",
       "materialCost": 1
     },
@@ -37,8 +26,19 @@
           "qualityMultiplier": 0.5
         }
       ],
-      "drawOrder": 3,
+      "drawOrder": 2,
       "id": "irons_jewelry:gem_rhinestone_b",
+      "materialCost": 1
+    },
+    {
+      "bonuses": [
+        {
+          "bonusType": "irons_jewelry:attribute_bonus",
+          "qualityMultiplier": 0.5
+        }
+      ],
+      "drawOrder": 3,
+      "id": "irons_jewelry:gem_rhinestone_c",
       "materialCost": 1
     }
   ],
