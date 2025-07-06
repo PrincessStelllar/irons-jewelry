@@ -404,7 +404,7 @@ public class IronsJewelryRegistries {
                                 ))
                         ),
                         Optional.of(CHAIN_RHINESTONE),
-                        false, 1.5
+                        false, 1.25
                 ));
             });
 }

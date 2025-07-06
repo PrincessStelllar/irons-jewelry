@@ -42,6 +42,6 @@
       "materialCost": 1
     }
   ],
-  "qualityMultiplier": 1.5,
+  "qualityMultiplier": 1.25,
   "unlockedByDefault": false
 }

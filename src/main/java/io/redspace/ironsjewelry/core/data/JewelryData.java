@@ -200,6 +200,7 @@ public class JewelryData {
                 duplicates.put(material, count);
             }
         });
+        boolean dirty = false;
         MutableComponent directTranslation = Component.translatable(descriptionId + ".item", ids);
         String rasterizedTranslation = directTranslation.getString();
         for (var entry : duplicates.entrySet()) {
@@ -208,10 +209,15 @@ public class JewelryData {
             if (count > 1) {
                 for (int i = 0; i < count - 1; i++) {
                     rasterizedTranslation = rasterizedTranslation.replace(String.format("%s-", Component.translatable(material.value().descriptionId()).getString()), "");
+                    dirty = true;
                 }
             }
         }
-        return Component.literal(rasterizedTranslation);
+        if (dirty) {
+            return Component.literal(rasterizedTranslation);
+        } else {
+            return directTranslation;
+        }
     }
 
     public List<BonusInstance> getBonuses() {
